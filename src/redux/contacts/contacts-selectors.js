@@ -1,8 +1,11 @@
+// import { fetchContacts } from "./contacts-operations";
+
 export const getItems = state => state.contacts.items;
 export const getFilter = state => state.contacts.filter;
 
 export const getVisibleContacts = state => {
   const items = getItems(state);
+  // const items = fetchContacts();
   const filter = getFilter(state);
   const normalizedFilter = filter.toLowerCase();
   return items.filter(contact =>
