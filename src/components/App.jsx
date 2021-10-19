@@ -1,5 +1,8 @@
 import React from 'react';
 import { Toaster } from 'react-hot-toast';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchContacts } from 'redux/contacts/contacts-operations';
 
 import ContactForm from './ContactForm';
 import ContactList from './ContactList';
@@ -7,6 +10,10 @@ import Container from './Container';
 import Filter from './Filter';
 
 export default function App() {
+    const dispatch = useDispatch();
+
+    useEffect(() => dispatch(fetchContacts()), [dispatch]);
+
     // const [contacts, setContacts] = useState([
     //     {id: 'id-1', name: 'Rosie Simpson', number: '459-12-56'},
     //     {id: 'id-2', name: 'Hermione Kline', number: '443-89-12'},
@@ -75,7 +82,6 @@ export default function App() {
         </Container>
     )
 }
-
 
 
 

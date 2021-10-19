@@ -1,11 +1,6 @@
 {
   "contacts": [
     {
-      "id": "id-1",
-      "name": "Rosie Simpson",
-      "number": "459-12-56"
-    },
-    {
       "id": "id-2",
       "name": "Hermione Kline",
       "number": "443-89-12"
@@ -19,31 +14,6 @@
       "id": "id-4",
       "name": "Annie Copeland",
       "number": "227-91-26"
-    },
-    {
-      "name": "cat",
-      "number": "22222222",
-      "id": "n0-yVdi"
-    },
-    {
-      "name": "Алина Мельник",
-      "number": "22222222",
-      "id": "aAUvc0g"
-    },
-    {
-      "name": "Алина Мельник",
-      "number": "44444444",
-      "id": "dZmAPeI"
-    },
-    {
-      "name": "rosie",
-      "number": "22222222",
-      "id": "9z0hMFH"
-    },
-    {
-      "name": "Алина Мельник",
-      "number": "3333333",
-      "id": "pbCVfNj"
     }
   ]
 }
